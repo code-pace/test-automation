@@ -1,0 +1,18 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "test automation tutorial",
+  "main": "index.js",
+  "scripts": {
+    "cy:test": "npx cypress run --spec 'cypress\\e2e\\**.cy.js'",
+    "cy:test:chrome": "npx cypress --browser chrome run --spec 'cypress\\e2e\\**.cy.js'",
+    "cy:test:edge": "npx cypress run --browser edge --spec 'cypress\\e2e\\**.cy.js'",
+    "cy:test:firefox": "npx cypress run --browser firefox --spec 'cypress\\e2e\\**.cy.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
